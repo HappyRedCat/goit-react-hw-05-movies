@@ -18,9 +18,7 @@ const Modal = ({ children, closeModal }) => {
 	// after
 	// 01001010011
 	// 01001010011
-	// 01001010011
-	// 01001010011
-	// 01001010011
+
 
 	useEffect(() => {
 		document.addEventListener('keydown', handleKeyDown)
