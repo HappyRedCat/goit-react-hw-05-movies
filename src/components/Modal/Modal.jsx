@@ -19,6 +19,8 @@ const Modal = ({ children, closeModal }) => {
 	// 01001010011
 	// 01001010011
 
+	// 777777
+
 
 	useEffect(() => {
 		document.addEventListener('keydown', handleKeyDown)
