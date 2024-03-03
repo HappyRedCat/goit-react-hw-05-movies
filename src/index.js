@@ -1,12 +1,17 @@
-import ReactDOM from 'react-dom/client'
-import { App } from './App'
-import { ToastContainer } from 'react-toastify'
-import 'react-toastify/dist/ReactToastify.css'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter } from "react-router-dom";
+import { App } from 'components/App';
+import GlobalStyles from 'components/theme/GlobalStyles';
+import './index.css';
 
-const root = ReactDOM.createRoot(document.getElementById('root'))
-root.render(
-	<>
-		<App />
-		<ToastContainer autoClose={1500} />
-	</>
-)
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <GlobalStyles />
+    <BrowserRouter basename='/goit-react-hw-05-movies' >
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>
+);
+
+
